@@ -221,15 +221,12 @@ class WiFiManagerParameter {
 
   protected:
     void init(const char *id, const char *label, const char *defaultValue, int length, const char *custom, int labelPlacement);
-
-  private:
     WiFiManagerParameter& operator=(const WiFiManagerParameter&);
     const char *_id;
     const char *_label;
     char       *_value;
     int         _length;
     int         _labelPlacement;
-  protected:
     const char *_customHTML;
     friend class WiFiManager;
 };
